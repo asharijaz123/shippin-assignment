@@ -1,0 +1,30 @@
+{
+  "name": "shippin-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-e2e": "npx playwright test",
+    "test-e2e-ui": "npx playwright test --ui",
+    "db:test": "tsx db/test-runner.ts",
+    "grpc:test": "tsx grpc/test-runner.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.53.0",
+    "@types/node": "^24.0.1",
+    "@types/pg": "^8.15.4",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.13.4",
+    "@grpc/proto-loader": "^0.7.15",
+    "google-proto-files": "^5.0.0",
+    "google-protobuf": "^3.21.4",
+    "pg": "^8.16.0"
+  }
+}
