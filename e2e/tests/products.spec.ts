@@ -21,7 +21,6 @@ test.describe("product functionality scenarios", () => {
   test("TC02 - Scenario B - Verify View Product", async ({
     productsPage,
     page,
-    baseURL,
   }) => {
     await productsPage.viewFirstProduct();
     await expect(page).toHaveURL(/.*product_details.*/);

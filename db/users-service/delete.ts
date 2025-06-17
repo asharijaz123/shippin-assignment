@@ -27,3 +27,7 @@ export async function deleteUsers(filters: UserFilters) {
 
   await db.query(query, values);
 }
+
+export async function deleteAllUsers() {
+  await db.query("DELETE FROM users");
+}

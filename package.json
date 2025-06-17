@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test-e2e": "npx playwright test",
-    "test-e2e-ui": "npx playwright test --ui",
+    "test-e2e": "npx playwright test --workers=1",
+    "test-e2e-ui": "npx playwright test --ui --workers=1",
     "db:test": "tsx db/test-runner.ts",
     "grpc:test": "tsx grpc/test-runner.ts"
   },
